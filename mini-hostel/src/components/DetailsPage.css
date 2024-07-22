@@ -1,0 +1,29 @@
+.custom-card {
+    margin-bottom: 1rem;
+  }
+  
+  .custom-card img {
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .card-title {
+    margin-bottom: 1rem;
+  }
+  
+  .card-text {
+    margin-bottom: 1rem;
+  }
+  
+  .mb-4 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  button {
+    margin-top: 1rem;
+  }
+  

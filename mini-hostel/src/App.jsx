@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/home';
 import Rooms from './components/Rooms';
 import HowToGet from './components/HowToget';
+import DetailsPage from './components/detailsPage';
 import Tours from './components/Tours';
 import Ebook from './components/Ebook';
 import Contact from './components/Contact';
@@ -23,6 +24,7 @@ function App() {
         <Route path="/tours" element={<Tours />} />
         <Route path="/ebook" element={<Ebook />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/details" element={<DetailsPage />} /> {/* Nova rota */}
       </Routes>
       <Footer />
       <FloatingWhatsAppButton />

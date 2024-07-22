@@ -1,8 +1,21 @@
-.custom-jumbotron {
-    padding: 2rem 1rem;
-    margin-bottom: 2rem;
-    background-color: black;
-    color: white;
-    border-radius: 0.3rem;
-  }
-  
+.hero-section {
+  background-color: #000; /* Cor de fundo para a seção do cabeçalho */
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+.hero-text {
+  margin-top: 20px;
+}
+
+.carousel-container {
+  width: 100%;
+  height: 50%; /* Ocupa toda a altura da tela */
+}
+
+.carousel-item img {
+  height: 100%;
+  width: 50%;
+  object-fit: cover;
+}
