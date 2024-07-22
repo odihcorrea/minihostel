@@ -1,13 +1,22 @@
 import React from 'react';
+import { useState } from 'react';
 import { Container } from 'react-bootstrap';
-import { Carousel } from 'react-bootstrap'; // Certifique-se de que esta linha está presente
+import { Carousel, Button} from 'react-bootstrap'; // Certifique-se de que esta linha está presente
 import './Home.css'; // Para o CSS personalizados
+import BookingPopup from './BookingPopup';
 
 import image1 from '/img/instalacoes/cafe.jpg';
 import image2 from '/img/instalacoes/quintuplo1.jpg';
 import image3 from '/img/instalacoes/suite1.jpg';
+import roomImage from '/img/instalacoes/suite1.jpg'; // Imagem do quarto
 
 function Home() {
+
+  const [showPopup, setShowPopup] = useState(false);
+
+  const handleShowPopup = () => setShowPopup(true);
+  const handleClosePopup = () => setShowPopup(false);
+
   return (
     <div>
       <header className="hero-section">
@@ -18,7 +27,7 @@ function Home() {
       </header>
 
       <div className="carousel-container">
-        <Carousel interval={2000} indicators={true} controls={true} slide={true}>
+        <Carousel interval={3000} indicators={false} pause={false} controls={false} slide={true}>
           <Carousel.Item>
             <img
               className="d-block w-100"
@@ -51,9 +60,44 @@ function Home() {
           </Carousel.Item>
         </Carousel>
       </div>
+
+      {/*nova seção*/}
+      <div className="room-section">
+        <div className="room-image">
+          <img src={roomImage} alt="Quarto" />
+        </div>
+        <div className="room-details">
+          <h2>Quarto Deluxe</h2>
+          <p>
+            Este quarto deluxe oferece o máximo de conforto com uma cama king-size, 
+            ar-condicionado, Wi-Fi gratuito, banheiro privativo e uma vista incrível para a cidade.
+          </p>
+          <Button variant="primary" onClick={handleShowPopup} >
+            Reservar este quarto
+          </Button>
+        </div>
+      </div>
+
+      {/*nova seção*/}
+      <div className="room-section">
+        <div className="room-details">
+          <h2>Quarto Deluxe</h2>
+          <p>
+            Este quarto deluxe oferece o máximo de conforto com uma cama king-size, 
+            ar-condicionado, Wi-Fi gratuito, banheiro privativo e uma vista incrível para a cidade.
+          </p>
+          <Button variant="primary" onClick={handleShowPopup} >
+            Reservar este quarto
+          </Button>
+        </div>
+        <div className="room-image">
+          <img src={roomImage} alt="Quarto" />
+        </div>
+      </div>
+
+      <BookingPopup show={showPopup} handleClose={handleClosePopup} />
     </div>
   );
 }
-
 
 export default Home;
