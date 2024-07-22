@@ -18,7 +18,7 @@ function App() {
     <Router>
       <CustomNavbar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/minihostel" element={<Home />} />
         <Route path="/rooms" element={<Rooms />} />
         <Route path="/how-to-get" element={<HowToGet />} />
         <Route path="/tours" element={<Tours />} />
