@@ -8,7 +8,7 @@ function CustomNavbar() {
   return (
     <Navbar bg="dark" variant="dark" expand="lg" >
       <Navbar.Brand as={Link} to="/">
-      <img src="../img/mini-hostel-logo.png" className='logo' alt="Mini Hostel"/>
+      <img src="./img/mini-hostel-logo.png" className='logo' alt="Mini Hostel"/>
       Mini Hostel
       </Navbar.Brand>
 
@@ -19,7 +19,7 @@ function CustomNavbar() {
         </Nav>
         <Nav className="ml-auto"> {/* Links à direita */}
           <Nav.Link as={Link} to="/">Home</Nav.Link>
-          <Nav.Link as={Link} to="/rooms">Quartos</Nav.Link>
+          <Nav.Link href="#quartos">Quartos</Nav.Link>
           <Nav.Link as={Link} to="/how-to-get">Como Chegar</Nav.Link>
           <Nav.Link as={Link} to="/tours">Passeios</Nav.Link>
           <Nav.Link as={Link} to="/ebook">Ebook</Nav.Link>

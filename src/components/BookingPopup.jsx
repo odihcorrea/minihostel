@@ -17,9 +17,10 @@ function BookingPopup({ show, handleClose }) {
 
   return (
     <Modal show={show} onHide={handleClose} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
-      <Modal.Header closeButton>
+      <Modal.Header>
         <Modal.Title>Suíte Standard</Modal.Title>
-      </Modal.Header>
+        <button type="button" onClick={handleClose} class="btn-close" aria-label="Close"></button>
+        </Modal.Header>
       <Modal.Body>
         <div className="popup-container">
           <Carousel activeIndex={index} onSelect={handleSelect} controls={true} indicators={false} className="main-carousel">
@@ -47,7 +48,7 @@ function BookingPopup({ show, handleClose }) {
           </div>
 
           <div className="details-section">
-            <h2>Suíte Standard</h2>
+            <h2 className='text-center'>Suíte Standard</h2>
             <ul className="room-features">
               <li><i className="fas fa-bed"></i> 1 cama de casal</li>
               <li><i className="fas fa-bath"></i> Banheiro privativo</li>
@@ -63,9 +64,11 @@ function BookingPopup({ show, handleClose }) {
               kitchenware and an oven. The suite provides a washing machine, a tea and coffee maker, as well as a 
               terrace and a patio. The unit offers 1 bed.
             </p>
-            <Button variant="primary" href="https://www.booking.com/hotel/br/mini-hostel-tutoia1.pt-br.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARfIAQzYAQHoAQH4AQyIAgGoAgO4Ate3-bQGwAIB0gIkZjc1NzFmZDktYmRlNC00ZjRkLThkYjgtMDQ4MTM5MWU5MDg32AIG4AIB&sid=4b66c00f0209ce853ea702f07f1401e6&all_sr_blocks=807713001_350984701_2_1_0;checkin=2024-07-25;checkout=2024-07-26;dest_id=8077130;dest_type=hotel;dist=0;group_adults=2;group_children=0;hapos=1;highlighted_blocks=807713001_350984701_2_1_0;hpos=1;matching_block_id=807713001_350984701_2_1_0;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=807713001_350984701_2_1_0__16000;srepoch=1721654261;srpvid=7e275d78f2440319;type=total;ucfs=1&">
+            <div class="d-grid gap-2">
+            <Button variant="primary" href="https://www.wa.me/5598985540632">
               Reservar este quarto
             </Button>
+            </div>
           </div>
         </div>
       </Modal.Body>

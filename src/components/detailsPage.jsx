@@ -87,7 +87,7 @@ function DetailsPage() {
               <p>
                 Para garantir a sua estadia, clique no botão abaixo e você será redirecionado para o Booking.com para completar sua reserva.
               </p>
-              <Button variant="primary" href="https://www.booking.com/hotel/br/mini-hostel-tutoia1.pt-br.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaCCIAQGYAS24ARfIAQzYAQHoAQH4AQyIAgGoAgO4Ate3-bQGwAIB0gIkZjc1NzFmZDktYmRlNC00ZjRkLThkYjgtMDQ4MTM5MWU5MDg32AIG4AIB&sid=4b66c00f0209ce853ea702f07f1401e6&all_sr_blocks=807713001_350984701_2_1_0;checkin=2024-07-25;checkout=2024-07-26;dest_id=8077130;dest_type=hotel;dist=0;group_adults=2;group_children=0;hapos=1;highlighted_blocks=807713001_350984701_2_1_0;hpos=1;matching_block_id=807713001_350984701_2_1_0;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=807713001_350984701_2_1_0__16000;srepoch=1721654261;srpvid=7e275d78f2440319;type=total;ucfs=1&" target="_blank">
+              <Button variant="primary" href="https://www.wa.me/5598985884338" target="_blank">
                 Reservar Agora
               </Button>
             </Card.Body>
@@ -109,6 +109,8 @@ function DetailsPage() {
         </Col>
       </Row>
     </Container>
+    
+
   );
 }
 

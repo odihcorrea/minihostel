@@ -14,42 +14,42 @@
 }
 
 .carousel-item img {
-  height: 100vh; /* Ocupa toda a altura da tela */
+  height: 70vh; /* Ocupa toda a altura da tela */
   width: 100%;
   object-fit: cover;
+
 }
 
 .room-section {
-  display: flex;
-  height: 100vh; /* Ocupa toda a altura da tela */
-}
-
-.room-image, .room-details {
-  flex: 1; /* Cada um ocupa 50% da largura */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-top: 40px;
 }
 
 .room-image img {
   width: 100%;
   height: auto;
-  object-fit: cover;
 }
 
 .room-details {
-  background-color: #f8f9fa; /* Cor de fundo clara */
-  padding: 2rem;
+  padding: 20px;
 }
 
 .room-details h2 {
-  margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .room-details p {
-  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-.room-details button {
-  display: block;
+.room-details .btn {
+  width: 100%;
+  padding: 10px;
+}
+
+.azul {
+  background-color: rgb(11, 11, 165);
 }
