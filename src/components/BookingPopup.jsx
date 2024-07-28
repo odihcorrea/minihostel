@@ -65,7 +65,7 @@ function BookingPopup({ show, handleClose }) {
               terrace and a patio. The unit offers 1 bed.
             </p>
             <div class="d-grid gap-2">
-            <Button variant="primary" href="https://www.wa.me/5598985540632">
+            <Button variant="primary" href="https://wa.me/5598985540632">
               Reservar este quarto
             </Button>
             </div>

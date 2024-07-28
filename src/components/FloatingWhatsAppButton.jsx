@@ -9,7 +9,7 @@ function FloatingWhatsAppButton() {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <img src="/img/whatsapp.webp" alt="WhatsApp" />
+      <img src="https://logodownload.org/wp-content/uploads/2015/04/whatsapp-logo-png-0.png" alt="WhatsApp" />
     </a>
   );
 }
