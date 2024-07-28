@@ -9,7 +9,7 @@ function FloatingWhatsAppButton() {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <img src="../img/whatsapp.webp" alt="WhatsApp" />
+      <img src="/img/whatsapp.webp" alt="WhatsApp" />
     </a>
   );
 }
