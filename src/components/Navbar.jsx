@@ -19,7 +19,7 @@ function CustomNavbar() {
         </Nav>
         <Nav className="ml-auto"> {/* Links à direita */}
           <Nav.Link as={Link} to="/">Home</Nav.Link>
-          <Nav.Link href="#quartos">Quartos</Nav.Link>
+          <Nav.Link href="/#quartos">Quartos</Nav.Link>
           <Nav.Link as={Link} to="/how-to-get">Como Chegar</Nav.Link>
           <Nav.Link as={Link} to="/tours">Passeios</Nav.Link>
           <Nav.Link as={Link} to="/ebook">Ebook</Nav.Link>
