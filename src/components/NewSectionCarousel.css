@@ -1,0 +1,25 @@
+.room-section {
+    margin-top: 2rem;
+  }
+  
+  .room-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .room-details {
+    padding: 1rem;
+  }
+  
+  .carousel-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @media (max-width: 768px) {
+    .carousel-item {
+      flex-direction: column;
+    }
+  }
+  

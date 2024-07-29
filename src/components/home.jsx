@@ -1,5 +1,5 @@
 import React from 'react';
-import { Carousel} from 'react-bootstrap'; // Certifique-se de que esta linha está presente
+import { Button, Carousel, Col, Container, Row} from 'react-bootstrap'; // Certifique-se de que esta linha está presente
 import './Home.css'; // Para o CSS personalizados
 import BookingPopup from './BookingPopup';
 
@@ -8,6 +8,7 @@ import image1 from '/img/instalacoes/cafe.jpg';
 import image2 from '/img/instalacoes/quintuplo1.jpg';
 import image3 from '/img/instalacoes/suite1.jpg';
 import CardCarousel from './CardCarousel';
+import NewSectionCarousel from './NewSectionCarousel';
 
 
 function Home() {
@@ -53,6 +54,8 @@ function Home() {
       </div>
 
       <CardCarousel/>
+
+      <NewSectionCarousel />
 
 
     </div>
