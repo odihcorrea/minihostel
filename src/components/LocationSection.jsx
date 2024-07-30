@@ -1,8 +1,6 @@
 import React from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import "leaflet/dist/leaflet.css";
-import L from "leaflet";
 
 const googleMapIframe = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d893.2471944787302!2d-42.272574488901526!3d-2.7611805557558045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ee0b342e107ab9%3A0xb4d77e1a5c4175cc!2sMini%20Hostel!5e1!3m2!1spt-BR!2sbr!4v1722297721683!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade';
 
@@ -40,6 +38,9 @@ const LocationSection = () => {
                 <p>
                   Venha nos visitar e aproveite a hospitalidade de Tutóia!
                 </p>
+                <Button variant="success" className="mt-auto">
+            Como chegar
+          </Button>
               </Col>
             </Row>
           </Card>
