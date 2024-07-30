@@ -87,7 +87,7 @@ const ReviewCardCarousel = () => {
       itemClass="carousel-item-padding-40-px"
     >
       {reviews.map((review, index) => (
-        <Card key={index} className="cards" style={{ height: '14rem', width: '18rem', margin: '10px' }}>
+        <Card key={index} className="cards" style={{ height: '14rem', width: '18rem',  }}>
           <Card.Body>
             <Card.Title className='text-center'>{review.title}</Card.Title>
             <Card.Subtitle className="text-center mb-2 text-muted">Nota: {review.rating}/10</Card.Subtitle>

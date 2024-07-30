@@ -1,0 +1,14 @@
+/* Adicione este CSS ao seu arquivo de estilos principal */
+.ebook-section img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .ebook-section h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .ebook-section p {
+    margin-bottom: 2rem;
+  }
+  

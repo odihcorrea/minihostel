@@ -13,6 +13,7 @@ import Beneficios from './beneficios';
 import Reviews from './Reviews';
 import ReviewsSection from './ReviewsSection';
 import LocationSection from './LocationSection';
+import EbookSection from './EbookSection';
 
 
 function Home() {
@@ -67,7 +68,9 @@ function Home() {
       <ReviewsSection/>
 
       <LocationSection />
-
+      <div className='bg-dark'>
+      <EbookSection />
+      </div>
 
 
     </div>

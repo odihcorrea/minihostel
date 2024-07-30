@@ -8,7 +8,7 @@ function CustomNavbar() {
   return (
     <Navbar bg="dark" variant="dark" expand="lg" >
       <Navbar.Brand as={Link} to="/">
-      <img src="./img/mini-hostel-logo.png" className='logo' alt="Mini Hostel"/>
+      <img src="/img/mini-hostel-logo.png" className='logo' alt="Mini Hostel"/>
       Mini Hostel
       </Navbar.Brand>
 

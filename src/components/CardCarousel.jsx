@@ -4,13 +4,10 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './CardCarousel.css';
 
-
-
 import image1 from '/img/instalacoes/cafe.jpg';
 import image2 from '/img/instalacoes/quintuplo1.jpg';
 import image3 from '/img/instalacoes/suite1.jpg';
 import BookingPopup from './BookingPopup';
-
 
 const CardCarousel = () => {
   const settings = {
@@ -19,6 +16,10 @@ const CardCarousel = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    autoplay: true, // Adiciona a funcionalidade de passagem automática
+    autoplaySpeed: 3000, // Define a velocidade da passagem automática (em milissegundos)
+    nextArrow: <SampleNextArrow />, // Define o componente de seta próximo
+    prevArrow: <SamplePrevArrow />, // Define o componente de seta anterior
     responsive: [
       {
         breakpoint: 1024,
@@ -45,10 +46,10 @@ const CardCarousel = () => {
   const handleClosePopup = () => setShowPopup(false);
 
   return (
-    <div className="carousel-container2" >
-      <h1 id='quartos'  className='text-center'>Nossos quartos</h1>
+    <div className="carousel-container2">
+      <h1 id='quartos' className='text-center'>Nossos quartos</h1>
       <Slider {...settings}>
-        <div className="carousel-card2"  >
+        <div className="carousel-card2">
           <img src={image1} alt="Quarto Deluxe" />
           <h2>Quarto Deluxe</h2>
           <p>Suíte espaçosa com uma cama king-size, ar-condicionado, Wi-Fi gratuito, banheiro privativo e uma vista deslumbrante.</p>
@@ -69,9 +70,29 @@ const CardCarousel = () => {
       </Slider>
 
       <BookingPopup show={showPopup} handleClose={handleClosePopup} />
-
-
     </div>
+  );
+}
+
+const SampleNextArrow = (props) => {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: 'block', background: 'blue', borderRadius: '50%' }}
+      onClick={onClick}
+    />
+  );
+}
+
+const SamplePrevArrow = (props) => {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: 'block', background: 'blue', borderRadius: '50%' }}
+      onClick={onClick}
+    />
   );
 }
 
