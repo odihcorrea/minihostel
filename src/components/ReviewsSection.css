@@ -1,0 +1,12 @@
+.carousel-container3 .carousel-item-padding-40-px {
+    transition: transform 0.5s ease;
+  }
+  
+  .cards {
+    height: 300px; /* Ajuste a altura conforme necessário */
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  

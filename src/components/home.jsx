@@ -9,6 +9,10 @@ import image2 from '/img/instalacoes/quintuplo1.jpg';
 import image3 from '/img/instalacoes/suite1.jpg';
 import CardCarousel from './CardCarousel';
 import NewSectionCarousel from './NewSectionCarousel';
+import Beneficios from './beneficios';
+import Reviews from './Reviews';
+import ReviewsSection from './ReviewsSection';
+import LocationSection from './LocationSection';
 
 
 function Home() {
@@ -53,9 +57,17 @@ function Home() {
         </Carousel>
       </div>
 
+      <Beneficios />
+
       <CardCarousel/>
 
       <NewSectionCarousel />
+
+      <Reviews />
+      <ReviewsSection/>
+
+      <LocationSection />
+
 
 
     </div>
