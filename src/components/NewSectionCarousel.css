@@ -1,25 +1,35 @@
 .room-section {
-    margin-top: 2rem;
+  padding: 2rem 0;
+}
+
+.room-image {
+  margin-bottom: 1rem;
+}
+
+.room-details {
+  padding: 1rem;
+}
+
+@media (max-width: 767.98px) {
+  .room-image {
+    text-align: center;
   }
-  
+
   .room-image img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
   }
-  
+
   .room-details {
-    padding: 1rem;
+    text-align: center;
   }
-  
-  .carousel-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+  .room-details p {
+    margin-bottom: 1rem;
   }
-  
-  @media (max-width: 768px) {
-    .carousel-item {
-      flex-direction: column;
-    }
+
+  .room-details button {
+    display: block;
+    margin: 0 auto;
   }
-  
+}

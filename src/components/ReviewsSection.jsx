@@ -5,49 +5,49 @@ import 'react-multi-carousel/lib/styles.css';
 import './ReviewsSection.css'; // Certifique-se de importar o arquivo CSS
 
 const reviews = [
-    {
-      title: "Excelente estadia!",
-      rating: 10,
-      author: "Ana",
-      date: "Julho 2024",
-      text: "O Mini Hostel é incrível! Os funcionários são super atenciosos e a localização é perfeita. Recomendo a todos!"
-    },
-    {
-      title: "Muito bom",
-      rating: 9,
-      author: "Carlos",
-      date: "Junho 2024",
-      text: "Gostei muito do hostel. Ótima relação custo-benefício e o Wi-Fi gratuito é um grande diferencial."
-    },
-    {
-      title: "Perfeito",
-      rating: 10,
-      author: "Fernanda",
-      date: "Março 2024",
-      text: "Tudo perfeito, desde a chegada até a partida. O hostel é lindo e os funcionários são super prestativos."
-    },
-    {
-      title: "Gostei",
-      rating: 9,
-      author: "Mariana",
-      date: "Janeiro 2024",
-      text: "Ambiente agradável e confortável. Excelente custo-benefício."
-    },
-    {
-      title: "Adorei",
-      rating: 10,
-      author: "Juliana",
-      date: "Novembro 2023",
-      text: "Simplesmente adorei! Voltarei com certeza."
-    },
-    {
-      title: "Muito bom",
-      rating: 9,
-      author: "Pedro",
-      date: "Outubro 2023",
-      text: "Ótima estadia, recomendo a todos."
-    }
-  ];
+  {
+    title: "Excelente estadia!",
+    rating: 10,
+    author: "Ana",
+    date: "Julho 2024",
+    text: "O Mini Hostel é incrível! Os funcionários são super atenciosos e a localização é perfeita. Recomendo a todos!"
+  },
+  {
+    title: "Muito bom",
+    rating: 9,
+    author: "Carlos",
+    date: "Junho 2024",
+    text: "Gostei muito do hostel. Ótima relação custo-benefício e o Wi-Fi gratuito é um grande diferencial."
+  },
+  {
+    title: "Perfeito",
+    rating: 10,
+    author: "Fernanda",
+    date: "Março 2024",
+    text: "Tudo perfeito, desde a chegada até a partida. O hostel é lindo e os funcionários são super prestativos."
+  },
+  {
+    title: "Gostei",
+    rating: 9,
+    author: "Mariana",
+    date: "Janeiro 2024",
+    text: "Ambiente agradável e confortável. Excelente custo-benefício."
+  },
+  {
+    title: "Adorei",
+    rating: 10,
+    author: "Juliana",
+    date: "Novembro 2023",
+    text: "Simplesmente adorei! Voltarei com certeza."
+  },
+  {
+    title: "Muito bom",
+    rating: 9,
+    author: "Pedro",
+    date: "Outubro 2023",
+    text: "Ótima estadia, recomendo a todos."
+  }
+];
 
 const responsive = {
   desktop: {
@@ -74,7 +74,7 @@ const ReviewCardCarousel = () => {
       draggable={true}
       showDots={true}
       responsive={responsive}
-      ssr={true}
+      ssr={true} // means to render carousel on server-side.
       infinite={true}
       autoPlay={true}
       autoPlaySpeed={3000}
@@ -87,7 +87,7 @@ const ReviewCardCarousel = () => {
       itemClass="carousel-item-padding-40-px"
     >
       {reviews.map((review, index) => (
-        <Card key={index} className="cards" style={{ height: '14rem', width: '18rem',  }}>
+        <Card key={index} className="review-card">
           <Card.Body>
             <Card.Title className='text-center'>{review.title}</Card.Title>
             <Card.Subtitle className="text-center mb-2 text-muted">Nota: {review.rating}/10</Card.Subtitle>

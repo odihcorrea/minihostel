@@ -1,0 +1,27 @@
+.contact-section {
+    background-color: #f8f9fa;
+    padding: 2rem 0;
+  }
+  
+  .contact-section h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-section .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-section .btn-primary {
+    width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-section .form-group {
+      margin-bottom: 1rem;
+      margin-left: 1rem;
+    }
+    .botao {
+       text-align : center;
+    }
+  }
+  

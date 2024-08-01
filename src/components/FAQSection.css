@@ -1,0 +1,13 @@
+.faq-section {
+    background-color: #f8f9fa;
+    padding: 2rem 0;
+  }
+  
+  .faq-section h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .faq-section .card-header {
+    cursor: pointer;
+  }
+  
